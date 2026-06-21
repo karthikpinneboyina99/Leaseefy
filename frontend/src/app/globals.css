@@ -1,0 +1,122 @@
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.15), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(56, 189, 248, 0.1), transparent 40%);
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #a78bfa 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px 0 rgba(139, 92, 246, 0.39);
+}
+
+.cta-button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+.glass-card {
+  margin-top: 4rem;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  text-align: left;
+}
+
+.feature h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+}
+
+.feature p {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
