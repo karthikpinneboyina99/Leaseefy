@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="hero">
@@ -9,9 +11,9 @@ export default function Home() {
         <p className="subtitle">
           Leaseefy helps landlords generate legally compliant rental and lease agreements quickly, no matter which state or country your property is in.
         </p>
-        <button className="cta-button">
-          Get Started
-        </button>
+        <Link href="/mnda" className="cta-button">
+          Generate Mutual NDA
+        </Link>
 
         <div className="glass-card">
           <div className="feature">

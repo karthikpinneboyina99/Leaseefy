@@ -1,0 +1,199 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formPanel {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.previewPanelWrapper {
+  border-radius: 1rem;
+  overflow-y: auto;
+  max-height: 90vh;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  background: white;
+}
+
+.previewPanel {
+  background: white;
+  color: black;
+  padding: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--glass-border);
+  background: rgba(0,0,0,0.2);
+  color: white;
+  font-size: 1rem;
+}
+
+.select option {
+  background: var(--background);
+  color: white;
+}
+
+.input:focus, .select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.partySection {
+  background: rgba(255,255,255,0.02);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--glass-border);
+  margin-bottom: 2rem;
+}
+
+.partySection h3 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 0.5rem;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.downloadBtn {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.downloadBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sigCanvasWrapper {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--glass-border);
+  height: 150px;
+  width: 100%;
+}
+
+.sigCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+.sigControls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.sigButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.sigButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.fileInput {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.savedSig {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--glass-border);
+}
+.savedSig img {
+  max-height: 80px;
+  margin-bottom: 1rem;
+}
+
+.markdown h1 { font-size: 1.5rem; margin-bottom: 1rem; text-align: center; }
+.markdown h2 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.markdown h3 { font-size: 1.1rem; margin-top: 1rem; margin-bottom: 0.5rem; }
+.markdown p { margin-bottom: 1rem; line-height: 1.4; }
+.markdown ul { margin-bottom: 1rem; padding-left: 1.5rem; }
+.markdown li { margin-bottom: 0.25rem; }
+.markdown label { font-style: italic; color: #555; display: block; font-size: 0.85rem; margin-bottom: 0.25rem; }
+.markdown table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+.markdown th, .markdown td { border: 1px solid #000; padding: 0.75rem; text-align: left; }
+.markdown img { max-width: 180px; max-height: 60px; display: block; }
+.markdown hr { border: 0; border-top: 1px solid #e2e8f0; margin: 3rem 0; page-break-before: always; }
+
+/* Force markdown checkboxes to be visible and black */
+.markdown input[type="checkbox"] {
+  opacity: 1 !important;
+  appearance: auto;
+  accent-color: #000;
+  transform: scale(1.3);
+  margin-right: 0.5rem;
+  cursor: default;
+}
