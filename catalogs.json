@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Mutual NDA",
+    "source_repo": "CommonPaper/Mutual-NDA",
+    "source_url": "https://github.com/CommonPaper/Mutual-NDA",
+    "local_path": "templates/Mutual-NDA",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "DPA",
+    "source_repo": "CommonPaper/DPA",
+    "source_url": "https://github.com/CommonPaper/DPA",
+    "local_path": "templates/DPA",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "CSA",
+    "source_repo": "CommonPaper/CSA",
+    "source_url": "https://github.com/CommonPaper/CSA",
+    "local_path": "templates/CSA",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "BAA",
+    "source_repo": "CommonPaper/BAA",
+    "source_url": "https://github.com/CommonPaper/BAA",
+    "local_path": "templates/BAA",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "SLA",
+    "source_repo": "CommonPaper/SLA",
+    "source_url": "https://github.com/CommonPaper/SLA",
+    "local_path": "templates/SLA",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "PSA",
+    "source_repo": "CommonPaper/PSA",
+    "source_url": "https://github.com/CommonPaper/PSA",
+    "local_path": "templates/PSA",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "AI Addendum",
+    "source_repo": "CommonPaper/AI-Addendum",
+    "source_url": "https://github.com/CommonPaper/AI-Addendum",
+    "local_path": "templates/AI-Addendum",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "Design Partner Agreement",
+    "source_repo": "CommonPaper/Design-Partner-Agreement",
+    "source_url": "https://github.com/CommonPaper/Design-Partner-Agreement",
+    "local_path": "templates/Design-Partner-Agreement",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "Partnership Agreement",
+    "source_repo": "CommonPaper/Partnership-Agreement",
+    "source_url": "https://github.com/CommonPaper/Partnership-Agreement",
+    "local_path": "templates/Partnership-Agreement",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "Software License Agreement",
+    "source_repo": "CommonPaper/Software-License-Agreement",
+    "source_url": "https://github.com/CommonPaper/Software-License-Agreement",
+    "local_path": "templates/Software-License-Agreement",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  },
+  {
+    "name": "Pilot Agreement",
+    "source_repo": "CommonPaper/Pilot-Agreement",
+    "source_url": "https://github.com/CommonPaper/Pilot-Agreement",
+    "local_path": "templates/Pilot-Agreement",
+    "license": "CC BY 4.0",
+    "date_imported": "2026-06-21"
+  }
+]
